@@ -15,10 +15,15 @@ public class SetSeason implements CommandExecutor {
     }
     @Override
     public boolean onCommand(CommandSender sender,Command command,String label,String[] args) {
+        if(args.length == 0 || Integer.parseInt(args[0])>3 || Integer.parseInt(args[0])<0){
+            sender.sendMessage("Season must be between 0-3. 0 for Spring, 1 for Summer, 2 for Fall, 3 for Winter.");
+            return false;
+        }
+
         int newSeason = Integer.parseInt(args[0]);
         int newYear;
 
-        if((args.length!=1 && args.length!=2) | newSeason>3 | newSeason<0){
+        if(args.length == 0 || newSeason>3 || newSeason<0){
             sender.sendMessage("Season must be between 0-3. 0 for Spring, 1 for Summer, 2 for Fall, 3 for Winter.");
             return false;
         }
