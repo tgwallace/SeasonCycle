@@ -20,6 +20,9 @@ public class SeasonAdvance implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        if(args.length == 0) {
+            return false;
+        }
         int seasonsAdvanced = parseInt(args[0]);
         Player player = (Player) sender;
         if(seasonsAdvanced >3 | seasonsAdvanced <1 | args.length!=1)
