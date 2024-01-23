@@ -1,0 +1,266 @@
+# Season length in real life days. On restart, the plugin will automatically advance the season if this many days has passed since the last season change. Set to 0 to turn off automatic season advances.
+SeasonLength: 7
+
+# Current season and year. Season 0 is Spring, 1 is Summer, 2 is Fall, 3 is Winter. LastChanged must follow MM-dd-yyyy format.
+Season: 0
+Year: 0
+LastChanged: 05-17-2009
+
+#Spreads snow on top of plants and below leaves.
+SnowOnPlants: true
+#Enhances bonemeal to spawn a range of biome-appropriate flowers and plants. Used in repopulating natural areas when snow melts, but also works for players.
+EnhancedBonemeal: true
+
+# Configure biome cycle below. Top line must match the name of your world. If adding additional world(s), duplicate season config below and change the name to the name of your other world(s).
+# All listed biomes must have a Spring, Summer, Fall, and Winter. While not required, I highly recommend using each biome as its own Spring value.
+world:
+  BADLANDS:
+    Spring: BADLANDS
+    Summer: BADLANDS
+    Fall: DESERT
+    Winter: WINDSWEPT_SAVANNA
+  BAMBOO_JUNGLE:
+    Spring: BAMBOO_JUNGLE
+    Summer: BAMBOO_JUNGLE
+    Fall: SPARSE_JUNGLE
+    Winter: SWAMP
+  BEACH:
+    Spring: BEACH
+    Summer: JUNGLE
+    Fall: BEACH
+    Winter: SNOWY_BEACH
+  BIRCH_FOREST:
+    Spring: BIRCH_FOREST
+    Summer: FOREST
+    Fall: TAIGA
+    Winter: SNOWY_PLAINS
+  CHERRY_GROVE:
+    Spring: CHERRY_GROVE
+    Summer: FOREST
+    Fall: TAIGA
+    Winter: GROVE
+  COLD_OCEAN:
+    Spring: COLD_OCEAN
+    Summer: COLD_OCEAN
+    Fall: COLD_OCEAN
+    Winter: FROZEN_OCEAN
+  DARK_FOREST:
+    Spring: DARK_FOREST
+    Summer: PLAINS
+    Fall: TAIGA
+    Winter: SNOWY_PLAINS
+  DEEP_COLD_OCEAN:
+    Spring: DEEP_COLD_OCEAN
+    Summer: DEEP_OCEAN
+    Fall: DEEP_COLD_OCEAN
+    Winter: DEEP_FROZEN_OCEAN
+  DEEP_FROZEN_OCEAN:
+    Spring: DEEP_FROZEN_OCEAN
+    Summer: DEEP_COLD_OCEAN
+    Fall: DEEP_FROZEN_OCEAN
+    Winter: DEEP_FROZEN_OCEAN
+  DEEP_LUKEWARM_OCEAN:
+    Spring: DEEP_LUKEWARM_OCEAN
+    Summer: WARM_OCEAN
+    Fall: DEEP_LUKEWARM_OCEAN
+    Winter: DEEP_OCEAN
+  DEEP_OCEAN:
+    Spring: DEEP_OCEAN
+    Summer: DEEP_LUKEWARM_OCEAN
+    Fall: DEEP_OCEAN
+    Winter: DEEP_COLD_OCEAN
+  DESERT:
+    Spring: DESERT
+    Summer: BADLANDS
+    Fall: DESERT
+    Winter: SAVANNA
+  ERODED_BADLANDS:
+    Spring: ERODED_BADLANDS
+    Summer: ERODED_BADLANDS
+    Fall: DESERT
+    Winter: WINDSWEPT_SAVANNA
+  FLOWER_FOREST:
+    Spring: FLOWER_FOREST
+    Summer: JUNGLE
+    Fall: BIRCH_FOREST
+    Winter: WINDSWEPT_FOREST
+  FOREST:
+    Spring: FOREST
+    Summer: JUNGLE
+    Fall: TAIGA
+    Winter: SNOWY_TAIGA
+  FROZEN_OCEAN:
+    Spring: FROZEN_OCEAN
+    Summer: COLD_OCEAN
+    Fall: FROZEN_OCEAN
+    Winter: FROZEN_OCEAN
+  FROZEN_PEAKS:
+    Spring: FROZEN_PEAKS
+    Summer: SNOWY_SLOPES
+    Fall: FROZEN_PEAKS
+    Winter: FROZEN_PEAKS
+  FROZEN_RIVER:
+    Spring: FROZEN_RIVER
+    Summer: RIVER
+    Fall: FROZEN_RIVER
+    Winter: FROZEN_RIVER
+  GROVE:
+    Spring: GROVE
+    Summer: WINDSWEPT_FOREST
+    Fall: GROVE
+    Winter: SNOWY_TAIGA
+  ICE_SPIKES:
+    Spring: ICE_SPIKES
+    Summer: WINDSWEPT_HILLS
+    Fall: SNOWY_SLOPES
+    Winter: FROZEN_PEAKS
+  JAGGED_PEAKS:
+    Spring: JAGGED_PEAKS
+    Summer: SNOWY_SLOPES
+    Fall: JAGGED_PEAKS
+    Winter: JAGGED_PEAKS
+  JUNGLE:
+    Spring: JUNGLE
+    Summer: JUNGLE
+    Fall: PLAINS
+    Winter: SWAMP
+  LUKEWARM_OCEAN:
+    Spring: LUKEWARM_OCEAN
+    Summer: WARM_OCEAN
+    Fall: LUKEWARM_OCEAN
+    Winter: OCEAN
+  MANGROVE_SWAMP:
+    Spring: MANGROVE_SWAMP
+    Summer: JUNGLE
+    Fall: DARK_FOREST
+    Winter: FOREST
+  MEADOW:
+    Spring: MEADOW
+    Summer: PLAINS
+    Fall: TAIGA
+    Winter: SNOWY_PLAINS
+  MUSHROOM_FIELDS:
+    Spring: MUSHROOM_FIELDS
+    Summer: MUSHROOM_FIELDS
+    Fall: PLAINS
+    Winter: FOREST
+  OCEAN:
+    Spring: OCEAN
+    Summer: WARM_OCEAN
+    Fall: OCEAN
+    Winter: COLD_OCEAN
+  OLD_GROWTH_BIRCH_FOREST:
+    Spring: OLD_GROWTH_BIRCH_FOREST
+    Summer: FOREST
+    Fall: TAIGA
+    Winter: SNOWY_PLAINS
+  OLD_GROWTH_PINE_TAIGA:
+    Spring: OLD_GROWTH_PINE_TAIGA
+    Summer: FOREST
+    Fall: WINDSWEPT_FOREST
+    Winter: SNOWY_TAIGA
+  OLD_GROWTH_SPRUCE_TAIGA:
+    Spring: OLD_GROWTH_SPRUCE_TAIGA
+    Summer: FOREST
+    Fall: WINDSWEPT_FOREST
+    Winter: SNOWY_TAIGA
+  PLAINS:
+    Spring: PLAINS
+    Summer: JUNGLE
+    Fall: MEADOW
+    Winter: SNOWY_PLAINS
+  RIVER:
+    Spring: RIVER
+    Summer: RIVER
+    Fall: RIVER
+    Winter: RIVER
+  SAVANNA:
+    Spring: SAVANNA
+    Summer: JUNGLE
+    Fall: PLAINS
+    Winter: SAVANNA
+  SAVANNA_PLATEAU:
+    Spring: SAVANNA_PLATEAU
+    Summer: JUNGLE
+    Fall: PLAINS
+    Winter: SAVANNA_PLATEAU
+  SNOWY_BEACH:
+    Spring: SNOWY_BEACH
+    Summer: BEACH
+    Fall: SNOWY_BEACH
+    Winter: SNOWY_BEACH
+  SNOWY_PLAINS:
+    Spring: SNOWY_PLAINS
+    Summer: PLAINS
+    Fall: SNOWY_PLAINS
+    Winter: GROVE
+  SNOWY_SLOPES:
+    Spring: SNOWY_SLOPES
+    Summer: SNOWY_PLAINS
+    Fall: SNOWY_SLOPES
+    Winter: FROZEN_PEAKS
+  SNOWY_TAIGA:
+    Spring: SNOWY_TAIGA
+    Summer: GROVE
+    Fall: SNOWY_TAIGA
+    Winter: FROZEN_PEAKS
+  SPARSE_JUNGLE:
+    Spring: SPARSE_JUNGLE
+    Summer: JUNGLE
+    Fall: PLAINS
+    Winter: SWAMP
+  STONY_PEAKS:
+    Spring: STONY_PEAKS
+    Summer: JUNGLE
+    Fall: STONY_PEAKS
+    Winter: PLAINS
+  STONY_SHORE:
+    Spring: STONY_SHORE
+    Summer: BEACH
+    Fall: STONY_SHORE
+    Winter: SNOWY_BEACH
+  SUNFLOWER_PLAINS:
+    Spring: SUNFLOWER_PLAINS
+    Summer: JUNGLE
+    Fall: MEADOW
+    Winter: WINDSWEPT_FOREST
+  SWAMP:
+    Spring: SWAMP
+    Summer: JUNGLE
+    Fall: SWAMP
+    Winter: FOREST
+  TAIGA:
+    Spring: TAIGA
+    Summer: FOREST
+    Fall: WINDSWEPT_FOREST
+    Winter: SNOWY_TAIGA
+  WARM_OCEAN:
+    Spring: WARM_OCEAN
+    Summer: WARM_OCEAN
+    Fall: WARM_OCEAN
+    Winter: OCEAN
+  WINDSWEPT_FOREST:
+    Spring: WINDSWEPT_FOREST
+    Summer: FOREST
+    Fall: GROVE
+    Winter: SNOWY_TAIGA
+  WINDSWEPT_GRAVELLY_HILLS:
+    Spring: WINDSWEPT_GRAVELLY_HILLS
+    Summer: FOREST
+    Fall: GROVE
+    Winter: SNOWY_TAIGA
+  WINDSWEPT_HILLS FOREST:
+    Spring: WINDSWEPT_HILLS
+    Summer: FOREST
+    Fall: GROVE
+    Winter: SNOWY_TAIGA
+  WINDSWEPT_SAVANNA:
+    Spring: WINDSWEPT_SAVANNA
+    Summer: JUNGLE
+    Fall: PLAINS
+    Winter: WINDSWEPT_SAVANNA
+  WOODED_BADLANDS:
+    Spring: WOODED_BADLANDS
+    Summer: WOODED_BADLANDS
+    Fall: DESERT
+    Winter: WINDSWEPT_SAVANNA
