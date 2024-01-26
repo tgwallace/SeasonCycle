@@ -1,5 +1,8 @@
 package me.hardbuckaroo.seasoncycle;
 
+import net.md_5.bungee.api.chat.TextComponent;
+import org.bukkit.ChatColor;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
@@ -44,6 +47,7 @@ public class PrintSeason {
                 else remain = daysLeft + " day remains until Spring.";
             }
         }
-        return seasonText + " " + remain;
+        TextComponent seasoncomponent = new TextComponent(ChatColor.translateAlternateColorCodes('&', seasonText + " &f&o" + remain));
+        return seasoncomponent.getText();
     }
 }

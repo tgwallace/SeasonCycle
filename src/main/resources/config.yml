@@ -207,8 +207,8 @@ world:
   SPARSE_JUNGLE:
     Spring: SPARSE_JUNGLE
     Summer: JUNGLE
-    Fall: PLAINS
-    Winter: SWAMP
+    Fall: SWAMP
+    Winter: PLAINS
   STONY_PEAKS:
     Spring: STONY_PEAKS
     Summer: JUNGLE
@@ -249,7 +249,7 @@ world:
     Summer: FOREST
     Fall: GROVE
     Winter: SNOWY_TAIGA
-  WINDSWEPT_HILLS FOREST:
+  WINDSWEPT_HILLS:
     Spring: WINDSWEPT_HILLS
     Summer: FOREST
     Fall: GROVE
