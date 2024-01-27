@@ -64,6 +64,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.LILY_OF_THE_VALLEY);
                                                 break;
                                         case 9:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.LILAC, false);
                                                 block.getRelative(BlockFace.UP).setType(Material.LILAC, false);
                                                 state.setType(Material.LILAC);
@@ -85,6 +86,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.GRASS);
                                                 break;
                                         case 24: case 25: case 26: case 27: case 28: case 29:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.TALL_GRASS, false);
                                                 block.getRelative(BlockFace.UP).setType(Material.TALL_GRASS, false);
                                                 state.setType(Material.TALL_GRASS);
@@ -101,6 +103,7 @@ public class BonemealEnhancer implements  Listener{
                                 chance = rand.nextInt(24);
                                 switch (chance) {
                                         case 0:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.LILAC, false);
                                                 block.getRelative(BlockFace.UP).setType(Material.LILAC, false);
                                                 state.setType(Material.LILAC);
@@ -113,6 +116,7 @@ public class BonemealEnhancer implements  Listener{
                                                 block.getRelative(BlockFace.UP).setBlockData(dataUpper,false);
                                                 break;
                                         case 1:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.ROSE_BUSH, false);
                                                 block.getRelative(BlockFace.UP).setType(Material.ROSE_BUSH, false);
                                                 state.setType(Material.ROSE_BUSH);
@@ -125,6 +129,7 @@ public class BonemealEnhancer implements  Listener{
                                                 block.getRelative(BlockFace.UP).setBlockData(dataUpper,false);
                                                 break;
                                         case 2:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.PEONY, false);
                                                 block.getRelative(BlockFace.UP).setType(Material.PEONY, false);
                                                 state.setType(Material.PEONY);
@@ -140,6 +145,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.LILY_OF_THE_VALLEY);
                                                 break;
                                         case 4:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.PUMPKIN_STEM,false);
                                                 state.setType(Material.PUMPKIN_STEM);
                                                 break;
@@ -147,6 +153,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.GRASS);
                                                 break;
                                         case 17: case 18: case 19: case 20: case 21: case 22:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.TALL_GRASS, false);
                                                 block.getRelative(BlockFace.UP).setType(Material.TALL_GRASS, false);
                                                 state.setType(Material.TALL_GRASS);
@@ -159,6 +166,7 @@ public class BonemealEnhancer implements  Listener{
                                                 block.getRelative(BlockFace.UP).setBlockData(dataUpper,false);
                                                 break;
                                         case 23:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.POTATOES,false);
                                                 state.setType(Material.POTATOES);
                                                 break;
@@ -188,6 +196,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.WHITE_TULIP);
                                                 break;
                                         case 7:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.SUNFLOWER, false);
                                                 block.getRelative(BlockFace.UP).setType(Material.SUNFLOWER, false);
                                                 state.setType(Material.SUNFLOWER);
@@ -206,6 +215,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.POPPY);
                                                 break;
                                         case 10:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.PUMPKIN_STEM,false);
                                                 state.setType(Material.PUMPKIN_STEM);
                                                 break;
@@ -213,6 +223,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.GRASS);
                                                 break;
                                         case 23: case 24: case 25: case 26: case 27: case 28:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.TALL_GRASS, false);
                                                 block.getRelative(BlockFace.UP).setType(Material.TALL_GRASS, false);
                                                 state.setType(Material.TALL_GRASS);
@@ -225,6 +236,7 @@ public class BonemealEnhancer implements  Listener{
                                                 block.getRelative(BlockFace.UP).setBlockData(dataUpper,false);
                                                 break;
                                         case 29:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.WHEAT,false);
                                                 state.setType(Material.WHEAT);
                                                 break;
@@ -251,6 +263,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.DEAD_BUSH);
                                                 break;
                                         case 4:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.PUMPKIN_STEM,false);
                                                 state.setType(Material.PUMPKIN_STEM);
                                                 break;
@@ -258,6 +271,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.GRASS);
                                                 break;
                                         case 17: case 18: case 19: case 20: case 21: case 22:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.TALL_GRASS, false);
                                                 block.getRelative(BlockFace.UP).setType(Material.TALL_GRASS, false);
                                                 state.setType(Material.TALL_GRASS);
@@ -292,6 +306,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.POPPY);
                                                 break;
                                         case 6:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.PUMPKIN_STEM,false);
                                                 state.setType(Material.PUMPKIN_STEM);
                                                 break;
@@ -299,6 +314,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.GRASS);
                                                 break;
                                         case 19: case 20: case 21: case 22: case 23: case 24:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.TALL_GRASS, false);
                                                 block.getRelative(BlockFace.UP).setType(Material.TALL_GRASS, false);
                                                 state.setType(Material.TALL_GRASS);
@@ -311,6 +327,7 @@ public class BonemealEnhancer implements  Listener{
                                                 block.getRelative(BlockFace.UP).setBlockData(dataUpper,false);
                                                 break;
                                         case 25:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.WHEAT,false);
                                                 state.setType(Material.WHEAT);
                                                 break;
@@ -325,6 +342,7 @@ public class BonemealEnhancer implements  Listener{
                                 }
                                 else switch (chance) {
                                         case 0:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.MELON_STEM,false);
                                                 state.setType(Material.MELON_STEM);
                                                 break;
@@ -335,6 +353,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.FERN);
                                                 break;
                                         case 9: case 10: case 11:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.LARGE_FERN, false);
                                                 block.getRelative(BlockFace.UP).setType(Material.LARGE_FERN, false);
                                                 state.setType(Material.LARGE_FERN);
@@ -357,6 +376,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.FERN);
                                                 break;
                                         case 9: case 10: case 11:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.LARGE_FERN, false);
                                                 block.getRelative(BlockFace.UP).setType(Material.LARGE_FERN, false);
                                                 state.setType(Material.LARGE_FERN);
@@ -372,6 +392,7 @@ public class BonemealEnhancer implements  Listener{
                                                 state.setType(Material.GRASS);
                                                 break;
                                         case 18: case 19: case 20:
+                                                block.setType(Material.AIR,true);
                                                 block.setType(Material.TALL_GRASS, false);
                                                 block.getRelative(BlockFace.UP).setType(Material.TALL_GRASS, false);
                                                 state.setType(Material.TALL_GRASS);

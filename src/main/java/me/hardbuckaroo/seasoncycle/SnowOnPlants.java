@@ -57,13 +57,16 @@ public class SnowOnPlants implements Listener {
                                 && !checkBlock.getBlockData().getMaterial().toString().contains("REPEATER")
                                 && !checkBlock.getBlockData().getMaterial().toString().contains("STRING")
                                 && !checkBlock.getBlockData().getMaterial().toString().contains("TRIPWIRE")
+                                && !checkBlock.getBlockData().getMaterial().toString().contains("DOOR")
+                                && !checkBlock.getBlockData().getMaterial().toString().contains("GATE")
                                 && !checkBlock.getRelative(0, -1, 0).getBlockData().getMaterial().toString().contains("SLAB")
                                 && !checkBlock.getRelative(0, -1, 0).getBlockData().getMaterial().toString().contains("STAIR")
                                 && !checkBlock.getRelative(0, -1, 0).getBlockData().getMaterial().toString().contains("FENCE")
                                 && !checkBlock.getRelative(0, -1, 0).getBlockData().getMaterial().toString().contains("WALL")
                                 && !checkBlock.getRelative(0, -1, 0).getBlockData().getMaterial().toString().contains("DOOR")
                                 && !checkBlock.getRelative(0, -1, 0).getBlockData().getMaterial().toString().contains("BARS")
-                                && !checkBlock.getRelative(0, -1, 0).getBlockData().getMaterial().toString().contains("CHEST")) {
+                                && !checkBlock.getRelative(0, -1, 0).getBlockData().getMaterial().toString().contains("CHEST")
+                                && !checkBlock.getRelative(0, -1, 0).getBlockData().getMaterial().toString().contains("GATE")) {
                                     checkBlock.setType(Material.SNOW);
                         }
                     }
