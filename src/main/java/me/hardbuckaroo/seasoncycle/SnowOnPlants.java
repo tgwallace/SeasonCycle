@@ -32,6 +32,7 @@ public class SnowOnPlants implements Listener {
                         checkBlock = block.getRelative(x, y, z);
                         if (checkBlock.getTemperature() <= 0.15
                                 && !checkBlock.getBlockData().getMaterial().isSolid()
+                                && (!checkBlock.getBlockData().getMaterial().isAir() || checkBlock.getLightFromSky() < 15)
                                 && checkBlock.getRelative(0, -1, 0).getBlockData().getMaterial().isSolid()
                                 && (int) checkBlock.getLightFromBlocks() == 0
                                 && (int) checkBlock.getLightFromSky() >= 11
