@@ -2,10 +2,12 @@ package me.hardbuckaroo.seasoncycle;
 
 import org.bukkit.*;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockFormEvent;
 
+import java.util.LinkedList;
 import java.util.Random;
 
 public class SnowOnPlants implements Listener {
@@ -18,7 +20,6 @@ public class SnowOnPlants implements Listener {
     public void onBlockFormEvent(BlockFormEvent event){
         if(!plugin.getConfig().getBoolean("SnowOnPlants")) return;
 
-        Random rand = new Random();
         Block block = event.getBlock();
         Block checkBlock;
         Material material = event.getNewState().getType();
@@ -67,7 +68,7 @@ public class SnowOnPlants implements Listener {
                                 && !checkBlock.getRelative(0, -1, 0).getBlockData().getMaterial().toString().contains("BARS")
                                 && !checkBlock.getRelative(0, -1, 0).getBlockData().getMaterial().toString().contains("CHEST")
                                 && !checkBlock.getRelative(0, -1, 0).getBlockData().getMaterial().toString().contains("GATE")) {
-                                    checkBlock.setType(Material.SNOW);
+                            checkBlock.setType(Material.SNOW);
                         }
                     }
                 }

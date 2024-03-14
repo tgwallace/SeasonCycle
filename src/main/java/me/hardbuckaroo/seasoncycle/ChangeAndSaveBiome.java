@@ -34,12 +34,14 @@ public class ChangeAndSaveBiome implements Listener {
         Database db = plugin.getRDatabase();
         String key = event.getWorld().getName()+","+chunk.getX()+","+chunk.getZ();
         String biomeString = db.getBiome(key);
-        Random rand = new Random();
+
+        int maxY = event.getWorld().getMaxHeight();
+        int minY = event.getWorld().getMinHeight();
 
         if(biomeString.equalsIgnoreCase("")) {
             for (int x = 0; x <= 15; x = x + 4) {
                 for (int z = 0; z <= 15; z = z + 4) {
-                    biomeString = biomeString + x + "," + z + "," + chunk.getBlock(x,319,z).getBiome().toString()+";";
+                    biomeString = biomeString + x + "," + z + "," + chunk.getBlock(x,maxY,z).getBiome().toString()+";";
                 }
             }
             String finalBiomeString = biomeString;
@@ -65,8 +67,8 @@ public class ChangeAndSaveBiome implements Listener {
                 configData[3] = plugin.getConfig().getString(event.getWorld().getName() + "." + originalBiome + ".Winter");
                 newBiome = Biome.valueOf(configData[season]);
             }
-            if (chunk.getBlock(x, 319, z).getBiome() != newBiome && newBiome != Biome.THE_VOID) {
-                for (int y = -64; y <= 319; y = y + 4) {
+            if (chunk.getBlock(x, maxY, z).getBiome() != newBiome && newBiome != Biome.THE_VOID) {
+                for (int y = minY; y <= maxY; y = y + 4) {
                     Block finalBlock = chunk.getBlock(x, y, z);
                     biomeString = finalBlock.getBiome().toString();
 

@@ -75,27 +75,28 @@ public abstract class Database {
 
     // Now we need methods to save things to the database
     public void setBiome(String key, String biome) {
-        Connection conn = null;
-        PreparedStatement ps = null;
-        try {
-            conn = getSQLConnection();
-            ps = conn.prepareStatement("REPLACE INTO " + table + " (key,originalBiome) VALUES(?,?)"); // IMPORTANT. In SQLite class, We made 3 colums. player, Kills, Total.
-            ps.setString(1, key);                                             // YOU MUST put these into this line!! And depending on how many
-            ps.setString(2, biome);
-            ps.executeUpdate();
-        } catch (SQLException ex) {
-            plugin.getLogger().log(Level.SEVERE, Errors.sqlConnectionExecute(), ex);
-        } finally {
+            Connection conn = null;
+            PreparedStatement ps = null;
             try {
-                if (ps != null)
-                    ps.close();
-                if (conn != null)
-                    conn.close();
+                conn = getSQLConnection();
+                ps = conn.prepareStatement("REPLACE INTO " + table + " (key,originalBiome) VALUES(?,?)"); // IMPORTANT. In SQLite class, We made 3 colums. player, Kills, Total.
+                ps.setString(1, key);                                             // YOU MUST put these into this line!! And depending on how many
+                ps.setString(2, biome);
+                ps.executeUpdate();
             } catch (SQLException ex) {
-                plugin.getLogger().log(Level.SEVERE, Errors.sqlConnectionClose(), ex);
+                plugin.getLogger().log(Level.SEVERE, Errors.sqlConnectionExecute(), ex);
+            } finally {
+                try {
+                    if (ps != null)
+                        ps.close();
+                    if (conn != null)
+                        conn.close();
+                } catch (SQLException ex) {
+                    plugin.getLogger().log(Level.SEVERE, Errors.sqlConnectionClose(), ex);
+                }
             }
-        }
     }
+
 
     public void close(PreparedStatement ps,ResultSet rs){
         try {

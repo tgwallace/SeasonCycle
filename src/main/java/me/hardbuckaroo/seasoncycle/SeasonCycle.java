@@ -26,8 +26,10 @@ public class SeasonCycle extends JavaPlugin {
 
         Bukkit.getPluginManager().registerEvents(new ChangeAndSaveBiome(this), this);
         Bukkit.getPluginManager().registerEvents(new JoinMessage(this), this);
-        Bukkit.getPluginManager().registerEvents(new MeltIceSnow(), this);
-        Bukkit.getPluginManager().registerEvents(new SnowOnPlants(this), this);
+        MeltIceSnow melt = new MeltIceSnow(this);
+        Bukkit.getPluginManager().registerEvents(melt, this);
+        SnowOnPlants snow = new SnowOnPlants(this);
+        Bukkit.getPluginManager().registerEvents(snow, this);
         Bukkit.getPluginManager().registerEvents(new BonemealEnhancer(this), this);
 
         SeasonAdvance seasonAdvance = new SeasonAdvance(this);
